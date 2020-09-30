@@ -15,18 +15,8 @@ export class AppComponent {
 
   constructor(public auth: AngularFireAuth){
     this.auth.user.subscribe((usuario) => {
-      setTimeout(()=>{
+
         this.cargando = false;
         this.usuario = usuario;
-      },1000)
-      
-    })
-  }
-
-  login() {
-    this.auth.signInWithEmailAndPassword('crisyanque@gmail.com', '012345');
-  }
-  logout() {
-    this.auth.signOut();
-  }
-}
+    });
+  } }
