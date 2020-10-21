@@ -38,3 +38,21 @@
         transform: rotate(360deg);
     }
 }
+
+.btn-login{
+    background-color: #F0845C !important;
+    border: 1px solid #F0845C !important;
+}
+
+.btn-login:hover{
+    background-color: #EA6F49 !important;
+}
+
+.logo{
+    width: 100%;
+    max-width: 300px;
+}
+
+body{
+    background-image: url('/assets/wallpaper-gym.jpg');
+}
