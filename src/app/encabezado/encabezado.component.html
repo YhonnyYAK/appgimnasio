@@ -19,21 +19,15 @@
             Clientes
           </a>
                 <div class="dropdown-menu" *dropdownMenu aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Agregar</a>
+                    <a class="dropdown-item" routerLink="/agregar-cliente">Agregar</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" routerLink="/listado-clientes">Ver Clientes</a>
                 </div>
             </li>
 
-            <li class="nav-item dropdown" dropdown>
-                <a class="nav-link dropdown-toggle" dropdownToggle href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Precios
-          </a>
-                <div class="dropdown-menu" *dropdownMenu aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Agregar</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Ver Precios</a>
-                </div>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/precios">Precios<span class="sr-only"></span></a>
             </li>
 
 
