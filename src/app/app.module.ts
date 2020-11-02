@@ -20,6 +20,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { MensajesService } from './services/mensajes.service';
 import { PreciosComponent } from './precios/precios.component';
 import { PdfViewerModule }  from 'ng2-pdf-viewer';
+import { ReportesComponent } from './reportes/reportes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PdfViewerModule }  from 'ng2-pdf-viewer';
     EncabezadoComponent,
     ListadoClientesComponent,
     AgregarClienteComponent,
-    PreciosComponent
+    PreciosComponent,
+    ReportesComponent
   ],
   imports: [
     BrowserModule,
