@@ -1,6 +1,8 @@
 <div class="container mt-5">
 
-    <form [formGroup]="formularioCliente" action="">
+    <h2>Gestión de Clientes</h2>
+
+    <form [formGroup]="formularioCliente" class="webform" action="">
 
         <div class="row">
             <div class="col-sm-4">
@@ -71,8 +73,10 @@
                 <progressbar [value]="porcentajeSubida" type="danger" [striped]="true">{{porcentajeSubida}}%</progressbar>
             </div>
             <br><br>
-            <button *ngIf="!esEditable" class="btn-primary" [disabled]="formularioCliente.invalid && !urlImagen" (click)="agregar()">Agregar</button>
-            <button *ngIf="esEditable" class="btn-primary" [disabled]="formularioCliente.invalid && !urlImagen" (click)="editar()">Editar</button>
+            <div class="col-sm-12">
+                <button *ngIf="!esEditable" class="btn btn-primary btn-login" [disabled]="formularioCliente.invalid && !urlImagen" (click)="agregar()">Guardar Datos</button>
+                <button *ngIf="esEditable" class="btn btn-primary btn-login" [disabled]="formularioCliente.invalid && !urlImagen" (click)="editar()">Actualizar Datos</button>
+            </div>
         </div>
     </form>
 </div>
