@@ -19,4 +19,8 @@ export class AppComponent {
         this.cargando = false;
         this.usuario = usuario;
     });
-  } }
+  }
+
+  pdfSource =  "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
+
+}

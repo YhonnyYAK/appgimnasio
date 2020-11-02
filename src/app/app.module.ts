@@ -19,6 +19,7 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { MensajesService } from './services/mensajes.service';
 import { PreciosComponent } from './precios/precios.component';
+import { PdfViewerModule }  from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PreciosComponent } from './precios/precios.component';
     AngularFireStorageModule,
     ProgressbarModule.forRoot(),
     BsDropdownModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    PdfViewerModule
   ],
   providers: [
     AngularFireAuth,
