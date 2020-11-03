@@ -6,7 +6,10 @@
         <h2>Reporte de Clientes</h2>
       </div>
       <div class="col-md-6 text-right">
-        <button class="btn btn-danger btn-sm mt-2 mb-2" (click)="downloadPDF()">Descargar PDF</button>
+        <button class="btn btn-danger btn-sm m-2" (click)="downloadPDF()">Exportar PDF</button>
+        <button class="btn btn-success btn-sm m-2" (click)="export()" fileName="clientes" >
+          Exportar XSL
+        </button>
       </div>
     </div>  
 
