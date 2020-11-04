@@ -5,6 +5,7 @@ import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.compo
 import { PreciosComponent } from './precios/precios.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-inscripciones.component';
+import { ReportesComponent } from './reportes/reportes.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,9 @@ const routes: Routes = [
   },
   {
     path: 'listado-inscripciones', component: ListadoInscripcionesComponent
+  },
+  {
+    path: 'reportes', component: ReportesComponent
   }
 ];
 

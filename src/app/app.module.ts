@@ -22,6 +22,8 @@ import { PreciosComponent } from './precios/precios.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { SeleccionarClienteComponent } from './seleccionar-cliente/seleccionar-cliente.component';
 import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-inscripciones.component';
+import { PdfViewerModule }  from 'ng2-pdf-viewer';
+import { ReportesComponent } from './reportes/reportes.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-i
     PreciosComponent,
     InscripcionComponent,
     SeleccionarClienteComponent,
-    ListadoInscripcionesComponent
+    ListadoInscripcionesComponent,
+    ReportesComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-i
     AngularFireStorageModule,
     ProgressbarModule.forRoot(),
     BsDropdownModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    PdfViewerModule
   ],
   providers: [
     AngularFireAuth,
