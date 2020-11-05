@@ -26,6 +26,7 @@ export class ReportesComponent implements OnInit {
         cliente.id = item.id;
         cliente.ref = item.ref;
         this.clientes.push(cliente);
+        cliente.fechaNacimiento = new Date(cliente.fechaNacimiento.seconds * 1000);
       });
     });
   }
