@@ -25,6 +25,7 @@ import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-i
 import { PdfViewerModule }  from 'ng2-pdf-viewer';
 import { ReportesComponent } from './reportes/reportes.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { GraficoComponent } from './grafico/grafico.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     InscripcionComponent,
     SeleccionarClienteComponent,
     ListadoInscripcionesComponent,
-    ReportesComponent
+    ReportesComponent,
+    GraficoComponent
   ],
   imports: [
     BrowserModule,
