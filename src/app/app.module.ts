@@ -24,6 +24,8 @@ import { SeleccionarClienteComponent } from './seleccionar-cliente/seleccionar-c
 import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-inscripciones.component';
 import { PdfViewerModule }  from 'ng2-pdf-viewer';
 import { ReportesComponent } from './reportes/reportes.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { GraficoComponent } from './grafico/grafico.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { ReportesComponent } from './reportes/reportes.component';
     InscripcionComponent,
     SeleccionarClienteComponent,
     ListadoInscripcionesComponent,
-    ReportesComponent
+    ReportesComponent,
+    GraficoComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { ReportesComponent } from './reportes/reportes.component';
     ProgressbarModule.forRoot(),
     BsDropdownModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
-    PdfViewerModule
+    PdfViewerModule,
+    HighchartsChartModule
   ],
   providers: [
     AngularFireAuth,
