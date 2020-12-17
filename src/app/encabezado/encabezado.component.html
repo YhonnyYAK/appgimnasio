@@ -6,25 +6,24 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" routerLink="/">Inscripción <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/listado-inscripciones">Lista de Incripciones <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" routerLink="/listado-inscripciones">Ver Incsripciones <span class="sr-only"></span></a>
+                <a class="nav-link" routerLink="/inscripcion">Incripción <span class="sr-only"></span></a>
             </li>
 
             <li class="nav-item dropdown" dropdown>
                 <a class="nav-link dropdown-toggle" dropdownToggle id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Clientes
-          </a>
+                Clientes
+                </a>
                 <div class="dropdown-menu" *dropdownMenu aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" routerLink="/agregar-cliente">Agregar</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" routerLink="/listado-clientes">Ver Clientes</a>
                 </div>
             </li>
-
 
             <li class="nav-item">
                 <a class="nav-link" routerLink="/precios">Precios<span class="sr-only"></span></a>

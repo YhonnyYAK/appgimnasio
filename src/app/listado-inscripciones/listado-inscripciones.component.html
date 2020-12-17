@@ -1,13 +1,11 @@
-<div class="container mt-3" id="htmlData">
-    <div class="row">
+<div class="container mt-5" id="htmlData">
+    <div class="row bordes">
         <div class="col-md-6">
-            <h4>Listado de Inscripciones</h4>
+            <h2>Listado de Inscripciones</h2>
         </div>
         <div class="col-md-6 text-right">
             <button class="btn btn-danger btn-sm m-2" (click)="downloadPDF()">Exportar PDF</button>
-            <button class="btn btn-success btn-sm m-2" (click)="export()" fileName="clientes">
-      Exportar XSL
-    </button>
+            <button class="btn btn-success btn-sm m-2" (click)="export()" fileName="clientes">Exportar XSL</button>
         </div>
     </div>
     <table class="table">

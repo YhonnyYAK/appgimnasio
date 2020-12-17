@@ -10,7 +10,7 @@ import { GraficoComponent } from './grafico/grafico.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'inscripcion', pathMatch: 'full'
+    path: '', redirectTo: 'listado-inscripciones', pathMatch: 'full'
   },
   {
     path: 'inscripcion', component: InscripcionComponent

@@ -67,3 +67,29 @@ body{
     font-style: italic;
     color: #000000;
 } 
+
+.bordes{
+    border-bottom: 3px solid #EA6F49;
+    margin-bottom: 20px;
+}
+
+.titulos{
+    font-size: 1.6em;
+    color: #000000;
+}
+
+.table th,
+.table td{
+    border: 1px solid #EA6F49;
+}
+
+.card:hover,
+.table tbody tr:hover,
+.list-group-item:hover{
+    background-color: rgb(250, 206, 192);
+}
+
+.card{
+    border: 1px solid #EA6F49;
+    margin: 10px;
+}

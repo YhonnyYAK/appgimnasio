@@ -5,7 +5,7 @@
     <form class="webform" action="">
 
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-12">
 
             <app-seleccionar-cliente [nombre]="clienteSeleccionado.nombre" (seleccionoCliente)="asignarCliente($event)" (canceloCliente)="eliminarCliente()">
             </app-seleccionar-cliente>
@@ -46,9 +46,9 @@
 
             <button class="btn btn-primary" (click)="guardar()">Guardar</button>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-12">
             <div *ngIf="clienteSeleccionado.imgUrl" class="imgCliente">
-                <img [src]="clienteSeleccionado.imgUrl" alt="">
+                <img width="90%" [src]="clienteSeleccionado.imgUrl" alt="">
             </div>
         </div>
     </div>

@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
+//import { FooterComponent } from './footer/footer.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
 import { AngularFirestore } from '@angular/fire/firestore';
@@ -32,6 +33,7 @@ import { GraficoComponent } from './grafico/grafico.component';
     AppComponent,
     LoginComponent,
     EncabezadoComponent,
+    //FooterComponent,
     ListadoClientesComponent,
     AgregarClienteComponent,
     PreciosComponent,
